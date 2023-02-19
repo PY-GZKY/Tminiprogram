@@ -1,0 +1,18 @@
+<!--pages/about/index.wxml-->
+
+
+<view class='header'>
+
+<view class='wrap'>
+<image src='/images/icon.png'/>
+<span>T计划</span>
+<text>1.0.2</text>
+</view>
+</view>
+
+<view class='body'>
+<!-- <text class='desc-title'>介绍</text> -->
+<text class='desc'>一款非常简洁、易用的清单管理小程序, 待办事项的管理。</text>
+
+</view>
+

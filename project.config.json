@@ -1,0 +1,60 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "uglifyFileName": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.30.1",
+  "appid": "wxb4acf73b776362a6",
+  "projectname": "MiniTodo",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "login",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "新增",
+          "pathName": "pages/edit/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "注册",
+          "pathName": "pages/register/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "关于我们",
+          "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}
