@@ -1,6 +1,4 @@
-## Wandroid Todo
-
-   该项目是根据玩安卓网站的Todo Api开发的一款非常简洁、易用的清单管理小程序，用于随手记录想法以及待办事项的管理。
+## T计划 待办清单
 
 ## 小程序已上线，立即扫码体验
    <img src="https://github.com/kangdongpu/MiniTodo/blob/master/mini_code.png" width="300"/>
