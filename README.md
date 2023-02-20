@@ -1,13 +1,10 @@
-## T计划 待办清单
+### T计划 待办清单
 - 输入口令进入小程序()
 - 查看待办事项列表(日期、关键字搜索按钮)
 - 添加待办、编辑待办、删除待办、完成待办
 - 个人详情页面统计(待办中、已逾期、已完成、历史数据)
 
-## 小程序已上线，立即扫码体验
-   <img src="https://github.com/kangdongpu/MiniTodo/blob/master/mini_code.png" width="300"/>
-   
-## LICENSE
+### LICENSE
 
       Copyright 2023 PY-GZKY
 
