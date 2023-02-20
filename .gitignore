@@ -1,5 +1,5 @@
 __pycache__
 app.egg-info
-.idea
+backend/.idea
 .venv
 venv/
