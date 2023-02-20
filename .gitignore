@@ -3,3 +3,4 @@ app.egg-info
 backend/.idea
 .venv
 venv/
+.idea/
