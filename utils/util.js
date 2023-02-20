@@ -58,7 +58,7 @@ const doRequest = (url, method, params, doSuccess, doFail, doComplete) => {
 const showLoginTip = () => {
   wx.showModal({
     title: '提示',
-    content: '请登录',
+    content: '请输入口令',
     success: function (r) {
       if (r.confirm) {
         wx.navigateTo({
