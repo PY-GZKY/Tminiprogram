@@ -1,14 +1,14 @@
-from typing import Generator
+from typing import Any
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import jwt
 from pydantic import ValidationError
-from sqlalchemy import exc
-from sqlalchemy.orm import Session
+from pymongo import MongoClient
 
 from app import schemas
 from app.config.development_config import settings
+from app.db.mongo_db import get_mongo_
 from app.security import security
 
 reusable_oauth2 = OAuth2PasswordBearer(
@@ -16,10 +16,9 @@ reusable_oauth2 = OAuth2PasswordBearer(
 )
 
 
-
 def get_current_user(
-        db: Session = Depends(get_db), token: str = Depends(reusable_oauth2)
-) -> models.User:
+        db: MongoClient = Depends(get_mongo_), token: str = Depends(reusable_oauth2)
+) -> Any:
     try:
         payload = jwt.decode(
             token, settings.SECRET_KEY, algorithms=[security.ALGORITHM]

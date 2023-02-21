@@ -2,6 +2,7 @@
 import os
 import sys
 
+from pymongo import MongoClient
 from starlette.middleware.cors import CORSMiddleware
 
 from app.db.mongo_db import db
@@ -27,7 +28,7 @@ def create_app():
     )
 
     # 注册mongodb
-    # register_mongodb(app)
+    register_mongodb(app)
 
     # 跨域设置
     register_cors(app)
@@ -38,26 +39,19 @@ def create_app():
     return app
 
 
-def register_mysql(app: FastAPI):
+
+def register_mongodb(app: FastAPI):
     @app.on_event("startup")
-    async def connect_to_mysql():
-        logger.debug("MYSQL 数据库初始化成功 ... DONE")
+    async def connect_to_mongo():
+        try:
+            db.client = MongoClient(settings.MONGODB_URL, maxPoolSize=settings.MAX_CONNECTIONS_COUNT, minPoolSize=settings.MIN_CONNECTIONS_COUNT)
+            logger.debug("MONGODB 数据库初始化成功 ... DONE")
+        except Exception:
+            logger.error("MONGODB 数据库初始化失败 ... DONE")
 
-
-# def register_mongodb(app: FastAPI):
-#     @app.on_event("startup")
-#     async def connect_to_mongo():
-#         try:
-#             db.client = MongoClient(settings.MONGODB_URL, maxPoolSize=settings.MAX_CONNECTIONS_COUNT,
-#                                     minPoolSize=settings.MIN_CONNECTIONS_COUNT)
-#
-#             logger.debug("MONGODB 数据库初始化成功 ... DONE")
-#         except Exception:
-#             logger.error("MONGODB 数据库初始化失败 ... DONE")
-#
-#     @app.on_event("shutdown")
-#     async def close_mongo_connection():
-#         logger.debug("MONGODB 数据库连接关闭 ... DONE")
+    @app.on_event("shutdown")
+    async def close_mongo_connection():
+        logger.debug("MONGODB 数据库连接关闭 ... DONE")
 
 
 def register_cors(app: FastAPI):
