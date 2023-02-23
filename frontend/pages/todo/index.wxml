@@ -3,7 +3,6 @@
 <wxs module='utils' src='../../wxs/util.wxs' />
 
 <view class='header'>
-
   <view class='tabbar'>
     <text class='{{curIndex == 0 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='0'>全部</text>
     <text class='{{curIndex == 1 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='1'>工作</text>
@@ -15,7 +14,7 @@
     </view>
     
   </view>
-  <view class='header-divider' />
+  <!-- <view class='header-divider' /> -->
 </view>
 
 
@@ -24,7 +23,7 @@
     <view class='item-header'>
       <text class='start-time'>{{utils.parseDate(item.date)}}</text>
     </view>
-    <view class='header-divider2' />
+    <!-- <view class='header-divider2' /> -->
     <view wx:for="{{item.datas}}" wx:key="this" bindtap='bindItem' data-item='{{item}}'>
       <view class='item-title-wrap' >
         <span class='item-title'>{{item.title}}</span>
@@ -33,7 +32,7 @@
         </view>
         <text wx:if='{{item.priority == 1}}' class='mark'>重要</text>
       </view>
-        <text class='item-content'>{{item.content}}</text>
+
       <view class='divider'/>
     </view>
   </view>

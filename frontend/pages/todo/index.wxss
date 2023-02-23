@@ -78,31 +78,38 @@
 }
 
 .item-header {
-  height: 50rpx;
+  height: 52rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f7fffd
+  background: #ffffff
 }
 
 .start-time {
-  font-size: 24rpx;
-  color: #0091ea;
-  margin-left: 20rpx
+  font-size: 26rpx;
+  height: 26rpx;
+  color: #7c3535;
+  margin-left: 20rpx;
 }
 .divider {
-  height: 1rpx;
-  background: #eee;
-  margin-top: 20rpx;
+  height: 0rpx;
+  background: rgb(2, 112, 103);
+  margin-top: 10rpx;
 }
 .item-title-wrap {
+  border-radius: 10px;
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 20rpx;
-  overflow: hidden
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  background-color: #a2c594;
+  height: 100rpx;
 }
-
 
 .img-edit-wrap {
   width: 100rpx;
@@ -136,7 +143,7 @@
 .item-content {
   font-size: 24rpx;
   color: #767676;
-  margin-left: 45rpx;
+  margin-left: 60rpx;
   margin-top: 10rpx;
   margin-right: 40rpx;
   white-space:  pre-wrap;

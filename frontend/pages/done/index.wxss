@@ -69,25 +69,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f7fffd
+  background: #ffffff
 }
 
 .start-time {
-  font-size: 24rpx;
-  color: #0091ea;
-  margin-left: 20rpx
+  font-size: 26rpx;
+  height: 26rpx;
+  color: #2e9486;
+  margin-left: 20rpx;
 }
 .divider {
   height: 1rpx;
-  background: #eee;
+  background: rgb(255, 255, 255);
   margin-top: 20rpx;
 }
 .item-title-wrap {
+  border-radius: 10px;
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 20rpx;
-  overflow: hidden
+  /* padding-top: 10rpx; */
+  /* padding-bottom: 10rpx; */
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  height: 100rpx;
 }
 .img-edit-wrap {
   width: 100rpx;
@@ -131,9 +138,9 @@
 .item-end-time {
   font-size: 24rpx;
   color: #767676;
-  margin-left: 45rpx;
+  margin-left: 65rpx;
   margin-right: 40rpx;
-  margin-top: 5rpx;
+  /* margin-top: 5rpx; */
   display: flex;
   flex-direction: column;
   word-break:  break-all;

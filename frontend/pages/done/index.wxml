@@ -9,7 +9,7 @@
   <text class='{{curIndex == 2 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='2'>学习</text>
   <text class='{{curIndex == 3 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='3'>生活</text>
 </view>
-<view class='header-divider'/>
+<!-- <view class='header-divider'/> -->
 </view>
 
 
@@ -20,7 +20,7 @@
   <view class='item-header'>
       <text class='start-time' >{{utils.parseDate(item.date)}}</text>
  </view>
-<view class='header-divider2'/>
+<!-- <view class='header-divider2'/> -->
     <view wx:for="{{item.datas}}" wx:key="this" bindtap='bindItem' data-item='{{item}}'>
     <view class='item-title-wrap'>
        <text class='item-title'>{{item.title}}</text>
@@ -29,7 +29,7 @@
         </view>
         <text wx:if='{{item.priority == 1}}' class='mark'>重要</text>
     </view>
-       <text class='item-content'>{{item.content}}</text>
+       <!-- <text class='item-content'>{{item.content}}</text> -->
        <text class='item-end-time'>完成：{{utils.parseDate(item.completeDate)}}</text>
        <view class='divider'/>
        </view>
