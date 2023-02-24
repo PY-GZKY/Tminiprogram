@@ -6,22 +6,22 @@
   align-items: center;
 }
 .title {
-  height: 60rpx;
-  line-height: 60rpx;
-  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
   color: #333;
   margin-left: 40rpx;
 
 }
 .title-input-placeholder {
-  height: 60rpx;
-  line-height: 60rpx;
-  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
 }
 .title-input {
   width: 580rpx;
   display: flex;
-  font-size: 34rpx;
+  font-size: 24rpx;
   color: #333;
   margin-left: 20rpx;
 }
@@ -37,7 +37,7 @@
   height: 300rpx;
 }
 .content {
-  font-size: 34rpx;
+  font-size: 24rpx;
   color: #333;
   margin-left: 40rpx;
   line-height: 40rpx
@@ -64,13 +64,14 @@
 }
 
 .priority {
-  height: 60rpx;
-  line-height: 60rpx;
-  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
   color: #333;
   margin-left: 40rpx;
-
 }
+
+
 radio-group{
   display: flex;
 }
@@ -97,9 +98,9 @@ radio .wx-radio-input.wx-radio-input-checked{
   align-items: center;
 }
 .date {
-  height: 60rpx;
-  line-height: 60rpx;
-  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
   color: #333;
   margin-left: 40rpx;
 }
